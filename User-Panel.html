@@ -2,12 +2,9 @@
 <html lang="fa">
 <head>
   <meta charset="utf-8">
-  <!-- Google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/materialize_rtl.css"  media="screen,projection" />
-  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link type="text/css" rel="stylesheet" href="css/User-Panel.css" />
   <link type="text/css" rel="stylesheet" href="css/responsive.css"  media="screen,projection" />
@@ -15,7 +12,6 @@
 </head>
 <body>
 	<div class="row" id="main">
-    <!-- Personal Info Section -->
     <div class="col l6 m12 s12 user-info">
      <div id="user-info-div">
 			<div class="center-align column">
@@ -87,8 +83,7 @@
 				</form>
 			 </div>
       </div>
-		</div><!-- /.user-info -->
-    <!-- Recent Activities Section -->
+		</div>
     <div class="col l6 s12 recent-activities" alt="">
       <div id="recent-activities-div">
       <div class="center-align column">
@@ -211,12 +206,9 @@
       <div class="fade-div">
         <p>بیشتر...</p>
       </div>
-    </div><!-- /.recent-activities -->
-    <!-- Settings Button -->
+    </div>
     <a href="#settings" class="setting-btn btn-floating btn-large waves-effect waves-light modal-trigger"><i class="Medium material-icons">settings</i></a>
 	</div>
-
-  <!-- Settings Modal -->
   <div class="settings modal bottom-sheet" id="settings">
       <div class="row">
         <div class="col m4 s12 red center-align">
@@ -257,8 +249,6 @@
         </div>
       </div>
   </div>
-
-  <!-- jheton modal -->
   <div id="jheton-modal" class="modal">
   <div class="modal-content">
     <div class="row center-align gift-card-sec">
@@ -331,21 +321,16 @@
     </div>
   </div>
 </div>
-
   <script type="text/javascript" src="js\jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js\jquery.slimscroll.js"></script>
   <script type="text/javascript" src="js\materialize.js"></script>
-
   <script type="text/javascript">
     $(document).ready(function(){
-      //Date Picker for Birthday
         $('.datepicker').pickadate({
-          selectMonths: true, // Creates a dropdown to control month
-          selectYears: 100 // Creates a dropdown of 15 years to control year
+          selectMonths: true,
+          selectYears: 100
         });
-      //select menue
         $('select').material_select();
-      //makes recent-activities scrollable
           $('.fade-div').click(function(){
             $(this).css("display", "none");
           $('#recent-activities-div').slimScroll({
@@ -353,31 +338,10 @@
             position: 'left'
           });
         });
-      //Modals
         $('.modal-trigger').leanModal();
-      //Gift Cards
-        /* //gift card selection
-        $('#select').click(function(){
-          $('#plan-sec').css("opacity", "1");
-        });
-        //plan seleciton
-        $("#jheton-modal .plan-sec img").click(function(){
-          $("$jheton-modal .link-sec").css('display', 'block');
-          $("$jheton-modal .time-sec").css('display', 'block');
-        }); */
-        //scrollbar
-        /*
-        $('#user-info-div').slimScroll({
-          height: '100%',
-        });
-        */
           $('#user-info-div').slimScroll({
             height: '100%',
             position: 'left'
-            /*
-            railVisible: true,
-            alwaysVisible: true
-            */
           });
     });
   </script>
