@@ -1,0 +1,332 @@
+@charset "utf-8";
+/************************************************************************************
+    Color Reference:
+        yellow: #FEC76A, rgb(254, 199, 106)
+        purple: #B489D8, rgb(180, 137, 216)
+        blue:   #89c4ee, rgb(138, 197, 239)
+        green:  #3CC388, rgb(060, 195, 136)
+        red:    #E08283, rgb(224, 130, 131)
+*************************************************************************************/
+/*************************************User Panel CSS*********************************/
+
+/*************************
+***********Fonts**********
+**************************/
+@font-face {font-family: IRANSans-bold-web; src:url(../fonts/IRANSans-Bold-web.ttf); }
+@font-face {font-family: IRANSans-Light-web; src:url(../fonts/IRANSans-Light-web.ttf); }
+
+/*************************
+*******Primary Styles******
+**************************/
+html, body {height: 100%; }
+
+body {
+	font-family: IRANSans-Light-web;
+}
+
+textarea {border-width: 0px !important;}
+::-webkit-input-placeholder {color: #909090;}
+:-moz-placeholder {color: #909090;}
+::-moz-placeholder {color: #909090;}
+:-ms-input-placeholder {color: #909090;}
+
+div.column {
+	width: 80%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+input {
+	height: 35px !important;
+	line-height: 35px !important;
+	border-width: 0px !important;
+	color: #404040;
+}
+
+/*************************
+*****User Information*****
+**************************/
+.user-info h1 {
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: IRANSans-bold-web;
+	color: #fff;
+}
+.user-info form h1 {
+	border-top: 2px solid white;
+}
+.user-info {
+	background-color: #fec769;
+	height: 100%;
+}
+
+#user-info-div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.basic-info {
+	padding-left: 5px;
+}
+
+.user-avatar {
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.user-avatar a {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	color: white;
+	background-color: rgba(31, 31, 31, 0.8);
+	top:95px;
+	left:0px;
+   -webkit-transition: 0.5s ease;
+      -moz-transition: 0.5s ease;
+       -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+           transition: 0.5s ease;
+}
+
+.user-avatar:hover a {
+  top:65px;
+}
+
+form select {
+	height: 35px !important;
+	line-height: 35px !important;
+}
+
+.half {
+	width:49% !important;
+	margin-right: 1% !important;
+}
+
+input[type="tel"] {
+	width: 65.666666667% !important;
+	margin-right: 1%;
+}
+
+
+/*************************
+*****Recent Activities*****
+**************************/
+
+.recent-activities h1 {
+	font-size: 20px;
+	font-family: IRANSans-bold-web;
+	color: #fff;
+}
+
+.recent-activities {
+	position: relative;
+	background-color: #b489d7;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.recent-activities {
+	overflow-x: hidden;
+}
+
+.recent-activities ul {
+	width: 110%;
+	border-right: 2px solid white;
+}
+
+.recent-activities ul li {
+	display: none;
+	width: 100%;
+	height: 90px;
+	list-style-type: none;
+	display: block;
+}
+
+ul li .time {
+	float: right;
+	width:20%;
+	height: 90px;
+	margin-right: -22%;
+	padding-top: 10px !important;
+}
+
+ul li .time p {
+	color:white;
+	margin:0px !important;
+	font-size: 12px;
+cursor: default;
+}
+
+ul li img {
+	padding-top:1%;
+	padding-bottom: 1%;
+	float: right;
+	margin-top: 10px;
+	margin-right: -6.83px;
+	width: 3%;
+	background-color: #b489d7;
+}
+
+ul li .section {
+	float: right;
+	width:92%;
+	margin-right: 5%;
+	height: 90px;
+	padding-top: 10px !important;
+}
+
+ul li .section h1 {
+	font-size: 14px;
+	margin:0px !important;
+	text-align: right;
+cursor: default;
+}
+
+ul li .section p {
+	color: #DADADA;
+	text-align: right;
+	font-size: 11px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	cursor: default;
+}
+
+ul li .section:hover p {
+	color: #FFFFFF;
+}
+
+/* Fading div
+************************/
+.fade-div {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	bottom: 0px;
+	background-image: linear-gradient(0deg, rgb(180, 137, 216) 30%, rgba(180, 137, 216, 0) 100%);
+}
+.fade-div p {
+	position: absolute;
+	top: 140px;
+	right: 145px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 6px;
+	font-size: 12px;
+	padding: 5px;
+}
+/*************************
+*******Settings Modal******
+**************************/
+
+/* Settings Button
+************************/
+.setting-btn {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+/* Modal Styles
+************************/
+.settings .row>div {
+	height: 190px;
+}
+
+.settings .jheton-div {
+	background-color: #EC8788 !important;
+}
+.settings h1 {
+	padding-top: 15px;
+	font-size: 20px;
+	color: white;
+	font-family: IRANSans-bold-web;
+	text-align: center;
+}
+
+.settings .red img {
+	height: 120px !important;
+}
+
+.settings .red p {
+	color:white;
+	font-size: 18px;
+}
+.settings .red a {margin-top:0px !important;}
+
+.settings .red .myBtn {
+	margin-top:20px !important;
+	margin-right: 10px;
+	border-radius: 3px;
+	color: white;
+	width: 85%;
+}
+
+.settings .notif {
+	line-height: 30px;
+}
+
+.settings label {
+	color: white;
+	margin-right: 5%;
+	font-size: 12px;
+}
+
+.settings label:last-child {font-size: 16px;}
+
+/*************************
+*******jheton modal***********
+**************************/
+#jheton-modal .modal-content {
+	background-image: -webkit- linear-gradient(90deg, rgb(180, 137, 216) 10%, rgb(254, 199, 106) 90%);
+	background-image: -moz- linear-gradient(90deg, rgb(180, 137, 216) 10%, rgb(254, 199, 106) 90%);
+	background-image: -o- linear-gradient(90deg, rgb(180, 137, 216) 10%, rgb(254, 199, 106) 90%);
+	background-image: linear-gradient(90deg, rgb(180, 137, 216) 10%, rgb(254, 199, 106) 90%);
+}
+#jheton-modal {font-weight: bold;}
+#jheton-modal .row {
+	border-top:2px solid white;
+	 margin:15px auto;
+}
+#jheton-modal .gift-card-sec {border-width: 0px; margin-top: -10px;}
+
+#jheton-modal img {
+	max-height: 100px;
+	border-radius: 10px;
+}
+
+#jheton-modal .plan img {cursor: ponter;}
+
+#jheton-modal input {
+    height: 55px !important;
+    border-radius: 10px;
+    color: #707070;
+    margin-top: 10px !important;
+}
+#jheton-modal input:focus {box-shadow: none;}
+
+#jheton-modal .jheton-time {
+	height: 30px;
+	line-height: 30px;
+}
+#jheton-modal .link-sec {
+}
+#jheton-modal .close-modal {
+	height: 20px;
+}
+#jheton-modal .close-modal a {
+	float: left;
+	color: white;
+	border: 1px solid white;
+	border-radius: 6px;
+	font-size: 14px;
+	padding: 5px 15px;
+}
+/* #jheton-modal .plan-sec {opacity: 0.5;}
+   #jheton-modal .link-sec, .time-sec {display: none;} */

@@ -1,0 +1,92 @@
+/************************************************************************************
+    Color Reference:
+        yellow: #FEC76A, rgb(254, 199, 106)
+        purple: #B489D8, rgb(180, 137, 216)
+        blue:   #333333, rgb(138, 197, 239)
+        green:  #3CC388, rgb(060, 195, 136)
+        red:    #E08283, rgb(224, 130, 131)
+*************************************************************************************/
+/***************************************Main CSS*************************************/
+
+/*************************
+***********Fonts**********
+**************************/
+@font-face {font-family: IRANSans-bold-web; src:url(../fonts/IRANSans-Bold-web.ttf); }
+@font-face {font-family: IRANSans-Light-web; src:url(../fonts/IRANSans-Light-web.ttf); }
+
+
+/*************************
+*******Primary Styles******
+**************************/
+body {
+  font-family: IRANSans-Light-web;
+  background-image: -webkit- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
+  background-image: -moz- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
+  background-image: -o- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
+  background-image: linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+h1 {
+  color:white;
+  font-family: IRANSans-bold-web;
+  font-size: 20px;
+  font-weight: bold !important;
+}
+::-webkit-input-placeholder {color: #5e5e5e; }
+:-moz-placeholder {color: #5e5e5e; }
+::-moz-placeholder {color: #5e5e5e; }
+:-ms-input-placeholder {color: #5e5e5e; }
+
+/* Form Block
+************************/
+form {
+  border-radius: 3px;
+  padding: 15px 15px;
+  background-color: rgba(193, 193, 193, 0.5);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+/* Buttons
+************************/
+a {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background-color: rgb(60, 195, 136);
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  color:white !important;
+}
+/* .main
+************************/
+.main {
+  width: 90%;
+  max-width: 400px;
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+/*************************
+*******User Complete******
+**************************/
+.column {
+    width: 99%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  a.forgot-pass{
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    padding-bottom: 5px;
+    font-size: 11px;
+    background: none;
+    display: block;
+  }
+  .half {
+    width:49% !important;
+    margin-right: 1% !important;
+  }

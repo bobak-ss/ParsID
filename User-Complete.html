@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="css/materialize_rtl.css"  media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تکمیل اطلاعات</title>
+</head>
+<body>
+  <div class="center-align column">
+    <img alt="parsid" src="img\p-id_logo_512 (Ver 2.1).png  " width="50%">
+    <form>
+      <input class="validate" type="text" name="user-name" value="" alt="نام کاربری" placeholder="نام کاربری">
+      <h1>اطلاعات پایه</h1>
+      <div class="row">
+        <input class="col s6 validate" type="text" name="first-name" value="" alt="نام" placeholder="نام">
+        <input class="half col s6 validate" type="text" name="last-name" value="" alt="نام خانوادگی" placeholder="نام خانوادگی">
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <select id="gender" name="gender">
+            <option value="جنسیت" disabled selected>جنسیت</option>
+    				<option value="مرد">مرد</option>
+    				<option value="زن">زن</option>
+    			</select>
+        </div>
+        <input class="half col s6 validate" type="tel" name="phone-number" value="" alt="شماره تلفن همراه" placeholder="شماره تلفن همراه">
+      </div>
+      <input class="datepicker validate" type="date" name="birth-date" value="" alt="تاریخ تولد" placeholder="تاریخ تولد">
+      <h1>اطلاعات موقعیتی</h1>
+      <div class="row">
+        <div class="col s6">
+          <select id="city" name="city">
+            <option value="شهر" disabled selected>شهر</option>
+    				<option value="تهران">تهران</option>
+    				<option value="قزوین">قزوین</option>
+    				<option value="اهواز">اهواز</option>
+    				<option value="مشهد">مشهد</option>
+    				<option value="اصفهان">اصفهان</option>
+    				<option value="یزد">یزد</option>
+    				<option value="تبریز">تبریز</option>
+    				<option value="قم">قم</option>
+    				<option value="تهران">تهران</option>
+    				<option value="قزوین">قزوین</option>
+    				<option value="اهواز">اهواز</option>
+    				<option value="مشهد">مشهد</option>
+    				<option value="اصفهان">اصفهان</option>
+    				<option value="یزد">یزد</option>
+    				<option value="تبریز">تبریز</option>
+    				<option value="قم">قم</option>
+    				<option value="تهران">تهران</option>
+    				<option value="قزوین">قزوین</option>
+    				<option value="اهواز">اهواز</option>
+    				<option value="مشهد">مشهد</option>
+    				<option value="اصفهان">اصفهان</option>
+    				<option value="یزد">یزد</option>
+    				<option value="تبریز">تبریز</option>
+    				<option value="قم">قم</option>
+    			</select>
+        </div>
+        <input class="half col s6 validate" type="text" name="postal-code" value="" alt="کد پستی" placeholder="کد پستی">
+      </div>
+      <textarea id="address" class="materialize-textarea validate" placeholder="آدرس"></textarea>
+      <h1>رمز عبور</h1>
+      <input type="password" name="name" value="" alt="رمز عبور" placeholder="رمز عبور">
+      <input type="password" name="name" value="" alt="تکرار رمز عبور" placeholder="تکرار رمز عبور">
+      <a href="#agreements" class="modal-trigger" style="
+    background: none;
+    font-size: 10px;
+    /* line-height: 20px; */
+    font-weight: normal;
+    /* padding-bottom: 25px; */
+">قوانین سایت را قبول دارم</a>
+      <a href="#" class="btn waves-effect" >تکمیل اطلاعات</a>
+    </form>
+  </div>
+
+  <!-- Agrement Modal -->
+  <div id="agreements" class="modal">
+    <div class="modal-content">
+      <h4>قوانین</h4>
+      <p>یه سری قانون مسخره ... </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 100 // Creates a dropdown of 15 years to control year
+      });
+      //select menu
+      $('select').material_select();
+      //Modal
+      $('.modal-trigger').leanModal();
+    });
+
+  </script>
+</body>
+  </html>

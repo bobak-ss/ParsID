@@ -1,0 +1,14 @@
+/***************************************Responsive CSS*************************************/
+@media screen and (max-width:992px) {
+	.user-info {
+		height: auto;
+		overflow-y: visible;
+	}
+	.recent-activities {
+		height: auto;
+		overflow-y: visible;
+	}
+}
+@media screen and (max-width:768px) {
+
+}

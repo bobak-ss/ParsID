@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize_rtl.css"  media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link type="text/css" rel="stylesheet" href="css/User-Panel.css" />
+  <link type="text/css" rel="stylesheet" href="css/responsive.css"  media="screen,projection" />
+  <title>پنل کاربری</title>
+</head>
+<body>
+	<div class="row" id="main">
+    <!-- Personal Info Section -->
+    <div class="col l6 m12 s12 user-info">
+     <div id="user-info-div">
+			<div class="center-align column">
+				<img src="img\personal_info_white.png" alt="profile picture" width="50%" />
+				<h1>اطلاعات شخصی</h1>
+				<form>
+					<div class="row">
+						<div class="col s9">
+							<div class="basic-info">
+								<input class="" type="text" name="user-name" value="h.Gholi" alt="نام کاربری" placeholder="نام کاربری">
+								<input class="" type="text" name="email" value="gholgholih@gmail.com" alt="ایمیل" placeholder="آدرس ایمیل">
+						 </div>
+						</div>
+						<div class="col s3 user-avatar">
+								<img class="responsive-img circle"src="img/user-pic.png" alt="user-avatar" />
+								<a href="#">ویرایش</a>
+						</div>
+					</div>
+					<h1>اطلاعات پایه</h1>
+					<div class="row">
+						<input class="col s6 validate" type="text" name="first-name" value="حسن" alt="نام" placeholder="نام">
+						<input class="half col s6 validate" type="text" name="last-name" value="قلی زاده" alt="نام خانوادگی" placeholder="نام خانوادگی">
+					</div>
+					<div class="row">
+						<div class="input-field col s4">
+							<select id="gender" name="gender">
+								<option value="جنسیت" disabled selected>جنسیت</option>
+								<option selected value="مرد">مرد</option>
+								<option value="زن">زن</option>
+							</select>
+						</div>
+						<input class="col s8 validate" type="tel" name="phone-number" value="09376050505" alt="شماره تلفن همراه" placeholder="شماره تلفن همراه">
+					</div>
+					<input class="datepicker validate" type="date" name="birth-date" value="" alt="تاریخ تولد" placeholder="تاریخ تولد">
+					<h1>اطلاعات موقعیتی</h1>
+					<div class="row">
+						<div class="col s6">
+              <select id="city" name="city">
+								<option value="شهر" disabled selected>شهر</option>
+								<option value="تهران">تهران</option>
+								<option value="قزوین">قزوین</option>
+								<option value="اهواز">اهواز</option>
+								<option value="مشهد">مشهد</option>
+								<option value="اصفهان">اصفهان</option>
+								<option value="یزد">یزد</option>
+								<option value="تبریز">تبریز</option>
+								<option selected value="قم">قم</option>
+								<option value="تهران">تهران</option>
+								<option value="قزوین">قزوین</option>
+								<option value="اهواز">اهواز</option>
+								<option value="مشهد">مشهد</option>
+								<option value="اصفهان">اصفهان</option>
+								<option value="یزد">یزد</option>
+								<option value="تبریز">تبریز</option>
+								<option value="قم">قم</option>
+								<option value="تهران">تهران</option>
+								<option value="قزوین">قزوین</option>
+								<option value="اهواز">اهواز</option>
+								<option value="مشهد">مشهد</option>
+								<option value="اصفهان">اصفهان</option>
+								<option value="یزد">یزد</option>
+								<option value="تبریز">تبریز</option>
+								<option value="قم">قم</option>
+							</select>
+						</div>
+						<input class="half col s6 validate" type="text" name="postal-code" value="5652211039613" alt="کد پستی" placeholder="کد پستی">
+					</div>
+					<textarea id="address" class="materialize-textarea validate" placeholder="آدرس" Value="خیابان اصلی خیابان فرعی اول خیابان فرعی دوم کوچه اول پلاک1"></textarea>
+				</form>
+			 </div>
+      </div>
+		</div><!-- /.user-info -->
+    <!-- Recent Activities Section -->
+    <div class="col l6 s12 recent-activities" alt="">
+      <div id="recent-activities-div">
+      <div class="center-align column">
+				<img src="img\RA_white.png" alt="" style="width:40%; margin-top:20px;">
+				<h1>فعالیت های اخیر</h1>
+				<div class="">
+					<ul>
+						<li>
+							<div class="time center-align" style="padding-top:0px !important">
+								<p>زمان</p>
+								<p></p>
+								<p></p>
+							</div>
+							<img src="img\shape.png" alt="circle" style="margin-top:0px !important"/>
+							<div class="section right-aligned" style="padding-top:0px !important">
+								<h1>نام سایت</h1>
+								<p>فعالیت انجام شده توسط کاربر در سایت مذکوراز جمله<br>ورود به سایت یا پیام های ارسال شده از سمت سایت به سرور شناسه پارسبنی برفعالیت های ویژه کاربر در سایت</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p>چهارشنبه</p>
+								<p>95/16/02</p>
+								<p>12:33</p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1>بیپ تونز</h1>
+								<p>خرید آهنگ آشوبم از آلبوم باران تویی<br>گروه چارتار<br>قیمت: 3000 تومان</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p></p>
+								<p></p>
+								<p></p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1></h1>
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="time">
+								<p></p>
+								<p></p>
+								<p></p>
+							</div>
+							<img src="img\shape.png" alt="circle" />
+							<div class="section">
+								<h1></h1>
+								<p></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			 </div>
+      </div>
+      <div class="fade-div">
+        <p>بیشتر...</p>
+      </div>
+    </div><!-- /.recent-activities -->
+    <!-- Settings Button -->
+    <a href="#settings" class="setting-btn btn-floating btn-large waves-effect waves-light modal-trigger"><i class="Medium material-icons">settings</i></a>
+	</div>
+
+  <!-- Settings Modal -->
+  <div class="settings modal bottom-sheet" id="settings">
+      <div class="row">
+        <div class="col m4 s12 red center-align">
+          <a href="#" class="btn waves-effect flow-text myBtn">تغییر پسورد</a>
+        </div>
+        <div class="col m4 s12 red center-align jheton-div">
+          <h1 class="flow-text">پارس ژتون</h1>
+            <div class="col s7">
+                <p>گیفت کارت های 10 دلاری</p>
+                <a href="#jheton-modal" class="btn waves-effect waves-teal modal-trigger">دریافت</a>
+            </div>
+            <div class="col s5">
+              <img class="responsive-img" src="img/gift-icon-white.png" alt="pars-jheton"/>
+            </div>
+        </div>
+        <div class="col m4 s12 red">
+          <h1 class="flow-text">اعلان ها</h1>
+          <div class="notif">
+            <div class="switch">
+              <label>
+                Off
+                <input type="checkbox" id="biptoons" checked="true">
+                <span class="lever"></span>
+                On
+              </label>
+      		    <label class="flow-text" for="biptoons">بیپ تونز</label>
+            </div>
+            <div class="switch">
+              <label>
+                Off
+                <input type="checkbox" id="bazar" checked="true">
+                <span class="lever"></span>
+                On
+              </label>
+        		  <label class="flow-text" for="bazar">بازار</label>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- jheton modal -->
+  <div id="jheton-modal" class="modal">
+  <div class="modal-content">
+    <div class="row center-align gift-card-sec">
+      <div class="col s4">
+        <p>گیفیت کارت آیتونز</p>
+        <img class="responsive-img hide-on-small-only" src="img/gift-card.jpg" alt="pars-jheton" />
+        <input type="radio" name="group1" id="select-itunes" class="">
+        <a href="#plan-sec" id="select" class="btn waves-effect hide-on-small-only">انتخاب</a>
+      </div>
+      <div class="col s4">
+        <p>شارژ ایرانسل</p>
+        <img class="responsive-img hide-on-small-only" src="img/irancel.jpg" alt="pars-jheton" />
+        <input type="radio" name="group1" id="select-irancell" class="">
+        <a href="#plan-sec" id="select" class="btn waves-effect hide-on-small-only">انتخاب</a>
+      </div>
+      <div class="col s4">
+        <p>گیفت کارت پلی استور</p>
+        <img class="responsive-img hide-on-small-only" src="img/google-play.jpg" alt="pars-jheton" />
+        <input type="radio" name="group1" id="select-playstore" class="show-on-small" />
+        <a href="#plan-sec" id="select" class="btn waves-effect hide-on-small-only">انتخاب</a>
+      </div>
+    </div>
+    <div id="plan-sec" class="row center-align plan-sec">
+      <div class="col s4">
+        <p>زماندار (3دقیقه)</p>
+        <img class="responsive-img" src="img\pj-x6.png" alt="pars-jheton" height="100px">
+      </div>
+      <div class="col s4">
+        <p>زماندار (5دقیقه)</p>
+        <img class="responsive-img" src="img\pj-x9.png" alt="pars-jheton" height="100px">
+      </div>
+      <div class="col s4">
+        <p>نا محدود </p>
+        <img class="responsive-img" src="img\pj-x100.png" alt="pars-jheton" height="100px">
+      </div>
+    </div>
+    <div class="row center-align link-sec">
+      <div class="col m7 s12">
+              <p> با ارسال لینک روبرو برای دوستان خود در کمتر از 5 دقیقه هدیه خود را دریافت کنید! </p>
+      </div>
+      <div class="col m5 s12">
+        <input type="text" value=" http://pars-id.ir/pj/15oF66Rqwe1SaQ " />
+      </div>
+    </div>
+    <div class="row center-align time-sec">
+      <div class="col s8">
+        <div class="">
+          <div class="col s6 m6 jheton-time">
+            <p>زمان</p>
+          </div>
+          <div class="col s6 m6 jheton-time">
+            <p>تعداد</p>
+          </div>
+        </div>
+        <div class="ro">
+          <div class="col s6 m6 jheton-time">
+            <p>1:05</p>
+          </div>
+          <div class="col s6 m6 jheton-time">
+            <p>6 / 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <img class="responsive-img" src="img/pj.png" alt="pars-jheton" />
+      </div>
+    </div>
+    <div  class="close-modal">
+      <a class="modal-action modal-close waves-effect waves-light">بستن</a>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="js\jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js\jquery.slimscroll.js"></script>
+  <script type="text/javascript" src="js\materialize.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      //Date Picker for Birthday
+        $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 100 // Creates a dropdown of 15 years to control year
+        });
+      //select menue
+        $('select').material_select();
+      //makes recent-activities scrollable
+          $('.fade-div').click(function(){
+            $(this).css("display", "none");
+          $('#recent-activities-div').slimScroll({
+            height: '100%',
+            position: 'left'
+          });
+        });
+      //Modals
+        $('.modal-trigger').leanModal();
+      //Gift Cards
+        /* //gift card selection
+        $('#select').click(function(){
+          $('#plan-sec').css("opacity", "1");
+        });
+        //plan seleciton
+        $("#jheton-modal .plan-sec img").click(function(){
+          $("$jheton-modal .link-sec").css('display', 'block');
+          $("$jheton-modal .time-sec").css('display', 'block');
+        }); */
+        //scrollbar
+        /*
+        $('#user-info-div').slimScroll({
+          height: '100%',
+        });
+        */
+          $('#user-info-div').slimScroll({
+            height: '100%',
+            position: 'left'
+            /*
+            railVisible: true,
+            alwaysVisible: true
+            */
+          });
+    });
+  </script>
+  <script type="text/javascript">
+      $(function(){
+      });
+  </script>
+</body>
+</html>
