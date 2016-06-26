@@ -28,6 +28,7 @@ body {
   background-repeat: repeat-y;
   */
   background-color: orange;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 h1 {
