@@ -26,7 +26,7 @@ body {
   background-image: -o- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
   background-image: linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
   */
-  background-color: rgb(255, 182, 71);
+  background-color: rgb(255, 96, 37);
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
