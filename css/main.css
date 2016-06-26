@@ -19,7 +19,9 @@
 *******Primary Styles******
 **************************/
 body {
+  /*
   font-family: IRANSans-Light-web;
+  */
   background-image: -webkit- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
   background-image: -moz- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
   background-image: -o- linear-gradient(90deg, rgb(180, 137, 216) 15%, rgb(254, 199, 106) 85%);
