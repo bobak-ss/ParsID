@@ -2,13 +2,10 @@
 <html lang="fa">
 <head>
   <meta charset="utf-8">
-  <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/materialize_rtl.css"  media="screen,projection">
   <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection">
-  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>تکمیل اطلاعات</title>
 </head>
@@ -80,8 +77,6 @@
       <a href="#" class="btn waves-effect" >تکمیل اطلاعات</a>
     </form>
   </div>
-
-  <!-- Agrement Modal -->
   <div id="agreements" class="modal">
     <div class="modal-content">
       <h4>قوانین</h4>
@@ -91,21 +86,17 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
-  <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
   <script>
     $(document).ready(function(){
       $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 100 // Creates a dropdown of 15 years to control year
+        selectMonths: true,
+        selectYears: 100
       });
-      //select menu
       $('select').material_select();
-      //Modal
       $('.modal-trigger').leanModal();
     });
-
   </script>
 </body>
-  </html>
+</html>
